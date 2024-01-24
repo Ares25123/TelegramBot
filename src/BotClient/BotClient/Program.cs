@@ -17,7 +17,6 @@ namespace BotClient
 
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello There");
 
             var botClient = new TelegramBotClient("6847645908:AAGUL0u_Y12vFRa1sxR_QpVZhFor3mZsg_A");
 
@@ -234,7 +233,7 @@ namespace BotClient
                 {
                     HttpClient client = new HttpClient();
 
-                    var response = await client.GetAsync("https://localhost:7094/api/Product", cancellationToken);
+                    var response = await client.GetAsync("https://localhost:7094/api/User", cancellationToken);
                     var content = await response.Content.ReadAsStringAsync();
                     var users = JsonConvert.DeserializeObject<GetUserResponse[]>(content);
 
