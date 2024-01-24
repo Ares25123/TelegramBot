@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APIForBD</name>
+    </assembly>
+    <members>
+        <member name="M:APIForBD.Controllers.CategoryController.GetAll">
+            <summary>
+            Вывод данных о всех категориях
+            </summary>
+            /// <param name="model">Категория</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.CategoryController.GetById(System.Int32)">
+            <summary>
+            Вывод данных об одной категории
+            </summary>
+            /// <param name="model">Категория</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.CategoryController.Add(APIForBD.Contracts.Category.CreateCategoryRequest)">
+             <summary>
+             Создание новой категории
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "categoryName" : "Фрукт",
+                    "createdBy": 1,
+                    "createdAt": "2024-01-23T06:57:38.334Z"
+                 }
+            
+             </remarks>
+             <param name="model">Категория</param>
+             <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.CategoryController.Update(APIForBD.Contracts.User.CreateUserRequest)">
+             <summary>
+             Изменение текущих данных категории
+             </summary>
+             /// <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "categoryName" : "Фрукт",
+                    "createdBy": 1,
+                    "createdAt": "2024-01-23T06:57:38.334Z"
+                 }
+            
+             </remarks>
+             /// <param name="model">Категория</param>
+             <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.CategoryController.Delete(System.Int32)">
+            <summary>
+            Удаление категории
+            </summary>
+            /// <param name="model">Категория</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.MealController.GetAll">
+            <summary>
+            Вывод данных о всех блюдах
+            </summary>
+            /// <param name="model">Блюдо</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.MealController.GetById(System.Int32)">
+            <summary>
+            Вывод данных об одном блюде
+            </summary>
+            /// <param name="model">Блюдо</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.MealController.Add(APIForBD.Contracts.Meal.CreateMealRequest)">
+             <summary>
+             Создание нового блюда
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "MealName" : "Яблочный пирог",
+                    "MealDescription" : "Сделан из яблок и теста",
+                    "PreparationTime" : "01:15:00",
+                    "KKAL" : "265.5",
+                    "createdBy": 1,
+                    "createdAt": "2024-01-23T06:57:38.334Z"
+                 }
+            
+             </remarks>
+             <param name="model">Блюдо</param>
+             <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.MealController.Update(APIForBD.Contracts.Meal.CreateMealRequest)">
+             <summary>
+             Изменение текущих данных блюда
+             </summary>
+             /// <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "MealName" : "Яблочный пирог",
+                    "MealDescription" : "Сделан из яблок и теста",
+                    "PreparationTime" : "01:15:00",
+                    "KKAL" : "265.5",
+                    "createdBy": 1,
+                    "createdAt": "2024-01-23T06:57:38.334Z"
+                 }
+            
+             </remarks>
+             /// <param name="model">Блюдо</param>
+             <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.MealController.Delete(System.Int32)">
+            <summary>
+            Удаление данных о выбранном блюде
+            </summary>
+            /// <param name="model">Блюдо</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.ProductController.GetAll">
+            <summary>
+            Вывод данных о всех продуктах
+            </summary>
+            /// <param name="model">Продукт</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.ProductController.GetById(System.Int32)">
+            <summary>
+            Вывод данных об одном конкретном продукте
+            </summary>
+            /// <param name="model">Продукт</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.ProductController.Add(APIForBD.Contracts.Product.CreateProductRequest)">
+             <summary>
+             Создание нового продукта
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "productName" : "яблоко",
+                    "productDescription" : "вкусный фрукт",
+                    "season" : "лето-осень",
+                    "price" : "15.65",
+                    "createdBy": 1,
+                    "createdAt": "2024-01-23T06:57:38.334Z"
+                 }
+            
+             </remarks>
+             <param name="model">Продукт</param>
+             <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.ProductController.Update(APIForBD.Contracts.Product.CreateProductRequest)">
+             <summary>
+             Изменение текущих данных продукта
+             </summary>
+             /// <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "productName" : "Яблоко",
+                    "productDescription" : "Вкусный фрукт",
+                    "season" : "Лето-осень",
+                    "price" : "15.65",
+                    "createdBy": 1,
+                    "createdAt": "2024-01-23T06:57:38.334Z"
+                 }
+            
+             </remarks>
+             /// <param name="model">Продукт</param>
+             <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.ProductController.Delete(System.Int32)">
+            <summary>
+            Удаление данных о выбранном продукте
+            </summary>
+            /// <param name="model">Продукт</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.UserController.GetAll">
+            <summary>
+            Вывод данных о всех пользователях
+            </summary>
+            /// <param name="model">Пользователь</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.UserController.GetById(System.Int32)">
+            <summary>
+            Вывод данных об одном конкретном пользователе
+            </summary>
+            /// <param name="model">Пользователь</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.UserController.Add(APIForBD.Contracts.User.CreateUserRequest)">
+             <summary>
+             Создание нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "surname" : "Иванов",
+                    "name" : "Иван",
+                    "password" : "!Pa$$word123@",
+                    "email" : "21314@gmail.com",
+                    "createdBy": 1,
+                    "createdAt": "2024-01-23T06:57:38.334Z"
+                 }
+            
+             </remarks>
+             <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.UserController.Update(APIForBD.Contracts.User.CreateUserRequest)">
+             <summary>
+             Изменение текущих данных пользователя
+             </summary>
+             /// <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    "surname" : "Иванов",
+                    "name" : "Иван",
+                    "password" : "!Pa$$word123@",
+                    "email" : "21314@gmail.com",
+                    "createdBy": 1,
+                    "createdAt": "2024-01-23T06:57:38.334Z"
+                 }
+            
+             </remarks>
+             /// <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:APIForBD.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Удаление данных о выбранном пользователе
+            </summary>
+            /// <param name="model">Пользователь</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
